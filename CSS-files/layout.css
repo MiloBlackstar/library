@@ -1,4 +1,45 @@
 .grid-layout {
   display: grid;
-  grid-template-rows: 1fr 4fr;
+  grid-template-rows: 1fr 5fr;
+  height: 100vh;
+}
+
+.grid-layout .navbar {
+  background-color: white;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 30px;
+}
+
+.navbar p {
+  font-size: 4rem;
+  font-weight: bold;
+}
+
+.navbar button {
+  font-size: 1.6rem;
+  font-weight: bold;
+  padding: 10px 15px;
+  background-color: white;
+  border: 2px solid dodgerblue;
+  color: dodgerblue;
+  border-radius: 4px;
+  transition: background-color 0.15s, color 0.15s, opacity 0.15s;
+}
+
+.navbar button:hover {
+  background-color: dodgerblue;
+  color: white;
+}
+
+.navbar button:active {
+  opacity: 0.8;
+}
+
+.grid-layout .content-space {
+  background-color: rgb(204, 204, 204);
+  padding: 30px;
 }
