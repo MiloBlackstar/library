@@ -7,7 +7,7 @@
 /* Navbar Section */
 
 .grid-layout .navbar {
-  background-color: white;
+  background-color: #306BAC;
   width: 100%;
   height: 100%;
   display: flex;
@@ -25,15 +25,15 @@
   font-size: 1.6rem;
   font-weight: bold;
   padding: 10px 15px;
-  background-color: white;
-  border: 2px solid dodgerblue;
-  color: dodgerblue;
+  background-color: #306BAC;
+  border: 2px solid red;
+  color: red;
   border-radius: 4px;
   transition: background-color 0.15s, color 0.15s, opacity 0.15s;
 }
 
 .navbar button:hover {
-  background-color: dodgerblue;
+  background-color: red;
   color: white;
 }
 
@@ -42,7 +42,7 @@
 }
 
 .grid-layout .content-space {
-  background-color: rgb(204, 204, 204);
+  background-color: #98B9F2;
   padding: 30px;
 }
 
@@ -52,12 +52,12 @@
   display: grid;
   padding: 30px;
   grid-template-columns: 1fr 1fr 1fr 1fr;
-  grid-auto-rows: 200px;
+  grid-auto-rows: 250px;
   gap: 32px;
 }
 
 .book {
-  background-color: white;
+  background-color: #918EF4;
   border-radius: 10px;
   padding: 20px 10px 20px 30px;
   overflow: auto;
