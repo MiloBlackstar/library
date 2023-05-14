@@ -10,15 +10,20 @@
   background-color: #306BAC;
   width: 100%;
   height: 100%;
-  display: flex;
+  display: grid;
   align-items: center;
-  justify-content: space-between;
+  grid-template-columns: 1fr 1fr;
   padding: 30px;
 }
 
 .navbar p {
   font-size: 4rem;
   font-weight: bold;
+}
+
+.navbar .button-div {
+  display: flex;
+  justify-content: end;
 }
 
 .navbar button {
@@ -41,15 +46,51 @@
   opacity: 0.8;
 }
 
-.grid-layout .content-space {
+.add-book-form {
+  display: none;
+  text-align: center;
+  grid-column: 1/3;
+}
+
+legend {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  align-items: center;
+  background-color: #918EF4;
+  padding: 10px;
+  border-radius: 10px;
+  overflow: auto;
+}
+
+label {
+  display: block;
+  font-size: 1.8rem;
+}
+
+input {
+  padding: 5px 15px;
+  margin: 0px 10px;
+  border-radius: 10px;
+  border: none;
+  font-size: 1.6rem;
   background-color: #98B9F2;
-  padding: 30px;
+}
+
+input:focus {
+  outline-style: none;
+}
+
+form .submit-button {
+  font-size: 1.4rem;
+  margin-top: 10px;
+  padding: 10px 40px;
 }
 
 /* Content Section */
 
 .grid-layout .content-space {
   display: grid;
+  background-color: #98B9F2;
   padding: 30px;
   grid-template-columns: 1fr 1fr 1fr 1fr;
   grid-auto-rows: 250px;
@@ -63,17 +104,22 @@
   overflow: auto;
 }
 
-.title span {
-  font-size: 2.2rem;
-  font-weight: bold;
+.book .title span {
+  font-size: 2.4rem;
 }
 
 .book .title {
   font-size: 2.2rem;
+  font-weight: bold;
   margin-bottom: 15px;
+  text-decoration: underline;
 }
 
-.book .author, .pages, .read {
+.book .author span, .pages span, .finished span {
+  font-size: 1.8rem;
+}
+
+.book .author, .pages, .finished {
   font-size: 1.6rem;
   margin-bottom: 5px;
 }
