@@ -37,6 +37,7 @@ function myLibraryLoop(arrayOfBooks) {
     for (let property in arrayOfBooks[i]) {
       book.innerHTML += `<p class=${property}><span class=${property}>${property}:</span> ${arrayOfBooks[i][property]}`;
     }
+    
     bookSpace.appendChild(book);
   }
 }

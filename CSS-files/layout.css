@@ -123,3 +123,29 @@ form .submit-button {
   font-size: 1.6rem;
   margin-bottom: 5px;
 }
+
+.btn {
+  display:flex;
+  justify-content: end;
+  margin: 0px 40px 0 40px;
+}
+
+.remove-btn {
+  margin-top: 15px;
+  border: none;
+  background-color: #918EF4;
+  transition: opacity 0.2s;
+}
+
+.remove-icon {
+  width: 40px;
+  height: 40px;
+}
+
+.remove-btn:hover {
+  opacity: 0.7;
+}
+
+.remove-btn:active {
+  opacity: 0.4;
+}
